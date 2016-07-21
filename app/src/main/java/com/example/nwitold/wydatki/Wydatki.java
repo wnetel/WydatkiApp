@@ -39,7 +39,7 @@ public class Wydatki extends Activity {
 
             Cursor cursor = db.query("ODBIORCA",
                     new String[] {"id_odbiorca, nazwa, nr_konta"},
-                    "id_odbiorca = 1", null, null,null,null);
+                    "id_odbiorca = 2", null, null,null,null);
 
             if (cursor != null && cursor.moveToLast()) {
                 String nazwaText = cursor.getString(1);
